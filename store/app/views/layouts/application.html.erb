@@ -21,12 +21,11 @@
   </head>
 
   <body>
-    <div class="row">
-     <div class="large-12 columns"> 
+   <div class="contain-to-grid sticky">
       <nav class="top-bar">
        <ul class="title-area">
         <li class="name">
-         <h1><%= link_to "Inicio", root_path %></h1>
+         <%= link_to_image("/image/logo.gif", root_path) %>
         </li>
        </ul>
       <section class="top-bar-section">
@@ -36,7 +35,7 @@
        </ul>
       </section>
       </nav>
-      </div>
+     
     </div>
       <div class="row">
        <div class="large-12 columns"><%= yield %></div>
