@@ -21,22 +21,39 @@
   </head>
 
   <body>
-    <nav class="top-bar">
-     <ul class="title-area">
-      <li class="name">
-       <h1><%= link_to "Store", products_path %></h1>
-      </li>
-     </ul>
-    <section class="top-bar-section">
-     <ul class="right">
-      <li class="divider"></li>
-      <li><%= link_to "Buscar productos", products_path %></li>
-     </ul>
-    </section>
-    </nav>
     <div class="row">
-     <div class="small-8 columns"><%= yield %></div>
+     <div class="large-12 columns"> 
+      <nav class="top-bar">
+       <ul class="title-area">
+        <li class="name">
+         <h1><%= link_to "Inicio", root_path %></h1>
+        </li>
+       </ul>
+      <section class="top-bar-section">
+       <ul class="right">
+        <li class="divider"></li>
+        <li><%= link_to "Buscar productos", products_path %></li>
+       </ul>
+      </section>
+      </nav>
+      </div>
     </div>
+      <div class="row">
+       <div class="large-12 columns"><%= yield %></div>
+      </div>
     <%= javascript_include_tag "application" %>
+
+     <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
